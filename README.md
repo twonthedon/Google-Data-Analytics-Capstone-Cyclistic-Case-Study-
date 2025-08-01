@@ -31,7 +31,7 @@ cyclistic-bike-share-analysis-antwoine-johnson/
 
 ---
 
-## ❓ Key Business Questions
+##  Key Business Questions
 
 1. How do casual riders and members use bikes differently?
 2. When and where do each group typically ride?
@@ -49,6 +49,9 @@ My Tableau map revealed a key difference:
 - **End Locations**:  
   - **Casual Riders** often end near **Navy Pier**, around a 13-minute scenic ride.
   - **Members** typically ride across the **bridge to West Loop Gate**, likely commuting into downtown offices.
+### Ride Types Used
+
+This shows Difference in used between members and casuals. Causals use scooters more than members.
 
 ### 🕔 Peak Ride Times
 
@@ -109,4 +112,4 @@ To convert casual riders, Cyclistic should introduce a **“Weekend Warrior Pass
 **Antwoine Johnson**  
 Aspiring Data Analyst | SQL | Tableau | Data Storytelling  
 📍 San Francisco, CA  
-[LinkedIn Profile] *(optional)*
+[LinkedIn Profile] 
