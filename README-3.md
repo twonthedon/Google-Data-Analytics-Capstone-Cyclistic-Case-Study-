@@ -100,7 +100,7 @@ Using **BigQuery SQL**, I:
   - **Members** often end in **West Loop Gate**, a business district — likely commuting to/from work
 
 ### Tableau Visualization
-📍 **[View Tableau Map Here](INSERT_YOUR_PUBLIC_LINK)**  
+📍 **[View Tableau Map Here](https://public.tableau.com/views/TotalTripsEndStations/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**  
 This map shows high-overlap start locations, but clear geographic divergence in end locations between members and casuals.
 
 ---
