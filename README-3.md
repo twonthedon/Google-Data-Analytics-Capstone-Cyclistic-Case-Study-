@@ -50,7 +50,7 @@ Cyclistic is seeing strong usage from both casual riders and annual members. How
 ### Data Sources
 
 - Source: [Divvy Bike Share Trip Data](https://divvy-tripdata.s3.amazonaws.com/index.html)  
-- Timeframe: **12 months** (May 2022 – April 2023)  
+- Timeframe: **12 months** (July 2024 – June 2025)  
 - Format: 12 individual `.csv` files
 - License: [Here](https://divvybikes.com/data-license-agreement)
 - Fields include:  
