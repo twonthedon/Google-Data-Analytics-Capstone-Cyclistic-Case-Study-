@@ -1,0 +1,30 @@
+--- Combining Data
+
+CREATING A NEW DATA TABLE WITH ALL MONTHS OF DATA TO DOWNLOAD
+
+CREATE OR REPLACE TABLE 
+`rareair23.Cyclistic_Trip_Data.24_25_Trip_Data_Combined` AS 
+  (SELECT* FROM `rareair23.Cyclistic_Trip_Data.July_24_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.Aug_24_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.Sept_24_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.Oct_24_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.Nov_24_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.Dec_24_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.Jan_25_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.Feb_25_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.Mar_25_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.April_25_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.May_25_Trip_Data`
+  UNION ALL
+  SELECT* FROM `rareair23.Cyclistic_Trip_Data.June_25_Trip_Data`
+);
