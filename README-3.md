@@ -18,7 +18,9 @@
 
 ## 📖 Project Overview
 
-In this capstone project for the Google Data Analytics Certificate, I will perdorm real world task of a junior data analyst for  a fictional Chicago-based company **Cyclistic**, I analyzed the previous 12 months of public bike-share data. The goal: identify behavioral differences between casual riders and annual members, then recommend a data-driven strategy to convert more casual riders into subscribers.
+In this capstone project for the Google Data Analytics Certificate, I will perdorm real world task of a junior data analyst for  a fictional Chicago-based company **Cyclistic**, I analyzed the previous 12 months of public bike-share data. 
+
+The goal: identify behavioral differences between casual riders and annual members, then recommend a data-driven strategy to convert more casual riders into subscribers.
 
 I used **BigQuery SQL** for data exploration and transformation, and **Tableau** for visual storytelling. The final deliverable outlines business insights and actionable marketing recommendations tailored to Cyclistic’s goals.
 
@@ -99,7 +101,8 @@ Using **BigQuery SQL**, I:
 
 ---
 
-## 📊 Analyze
+## 📊 Analyze & 📤 Share
+
 
 ### Member vs Casual Rider Trends
 
@@ -131,10 +134,6 @@ This map shows high-overlap start locations between members and casuals.
 - [Total Trips by Month](https://public.tableau.com/views/PerMonthtotals/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
   
 
-
----
-
-## 📤 Share
 
 ### Summary Insights
 - Members behave more like commuters: short rides during weekdays, especially peak hours.  
