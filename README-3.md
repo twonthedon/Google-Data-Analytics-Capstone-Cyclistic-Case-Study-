@@ -18,9 +18,25 @@
 
 ## 📖 Project Overview
 
-In this capstone project for the Google Data Analytics Certificate, I analyzed a full year of public bike-share data from **Cyclistic**, a fictional Chicago-based company. The goal: identify behavioral differences between casual riders and annual members, then recommend a data-driven strategy to convert more casual riders into subscribers.
+In this capstone project for the Google Data Analytics Certificate, I will perdorm real world task of a junior data analyst for  a fictional Chicago-based company **Cyclistic**, I analyzed the previous 12 months of public bike-share data. The goal: identify behavioral differences between casual riders and annual members, then recommend a data-driven strategy to convert more casual riders into subscribers.
 
 I used **BigQuery SQL** for data exploration and transformation, and **Tableau** for visual storytelling. The final deliverable outlines business insights and actionable marketing recommendations tailored to Cyclistic’s goals.
+
+---
+## About
+### Cyclistic
+
+ A bike-share program that features more than 5,800 bicycles and 600
+docking stations. Cyclistic sets itself apart by also offering reclining bikes, hand
+tricycles, and cargo bikes, making bike-share more inclusive to people with disabilities
+and riders who can’t use a standard two-wheeled bike. The majority of riders opt for
+traditional bikes; about 8% of riders use the assistive options. Cyclistic users are more
+likely to ride for leisure, but about 30% use the bikes to commute to work each day.
+Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to
+broad consumer segments. One approach that helped make these things possible was the
+flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships.
+Customers who purchase single-ride or full-day passes are referred to as casual riders.
+Customers who purchase annual memberships are Cyclistic members.
 
 ---
 
@@ -61,6 +77,7 @@ Cyclistic is seeing strong usage from both casual riders and annual members. How
 - Weather and traffic data not included  
 - Assumes anonymized user data still reflects real usage patterns
 
+
 ---
 
 ## 🧹 Process
@@ -88,9 +105,9 @@ Using **BigQuery SQL**, I:
 
 | Metric                | Members              | Casual Riders          |
 |----------------------|----------------------|------------------------|
-| Average ride time     | ~12.5 minutes         | ~18.3 minutes           |
+| Average ride time     | ~11.8 minutes         | ~22.6 minutes           |
 | Peak usage time       | Wednesday @ 5 PM      | Saturday @ 5 PM         |
-| Bike type preference  | Classic bikes         | Docked bikes            |
+| Bike type preference  | Classic bikes         | Classic bikes           |
 | Purpose               | Likely commute        | Likely leisure          |
 
 ### Location Behavior
@@ -101,8 +118,19 @@ Using **BigQuery SQL**, I:
   - **Members** often end in **West Loop Gate**, a business district — likely commuting to/from work
 
 ### Tableau Visualization
-📍 **[View Tableau Map Here](https://public.tableau.com/views/TotalTripsEndStations/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**  
-This map shows high-overlap start locations, but clear geographic divergence in end locations between members and casuals.
+📍 [View Tableau Map – Trip Start Locations- Chicago University](https://public.tableau.com/views/TotalTripsAtStartStations/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+This map shows high-overlap start locations between members and casuals.
+
+📈 Visualizations
+
+- [Ride Types Used – Member vs Casual](https://public.tableau.com/views/RideTypesUsed/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [Trip End Locations – Navy Pier vs West Loop](https://public.tableau.com/views/TotalTripsEndStations/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [Total Trips by Hour of Day](https://public.tableau.com/views/TotalTrips/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [Total Trips by Day](https://public.tableau.com/views/TotalRidesperDay/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [Total Trips by Month](https://public.tableau.com/views/PerMonthtotals/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+  
+
 
 ---
 
