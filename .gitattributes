@@ -1,0 +1,4 @@
+*.sql linguist-language=SQL
+*.csv linguist-language=CSV
+*.txt linguist-language=Text
+*.r linguist-language=R
