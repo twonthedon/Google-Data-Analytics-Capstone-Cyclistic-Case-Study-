@@ -25,20 +25,6 @@ SELECT
 FROM
   rareair23.Cyclistic_Trip_Data.`24_25_Trip_Data_Combined`;
 
-SEARCHING DUPLICATE ROWS PREVIEW
-SELECT 
-COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_rows
-FROM `rareair23.Cyclistic_Trip_Data.24_25_Trip_Data_Combined`
-
-SEARCHING FOR DUPLICATE ROWS
-SELECT
-  ride_id,
-  COUNT(*) AS duplicate_count
-FROM
-  rareair23.Cyclistic_Trip_Data.`24_25_Trip_Data_Combined`
-GROUP BY ride_id
-HAVING COUNT(*) > 1;
-
 RIDE ID LENGTH
 SELECT 
 LENGTH(ride_id) AS length_ride_id, 
@@ -60,10 +46,7 @@ ORDER BY
   count_of_type DESC;
 
 
-
-
 TIMESTAMPED RIDES
-
 SELECT
   COUNT(*) AS longer_than_a_day
 FROM
@@ -77,3 +60,31 @@ FROM
   rareair23.Cyclistic_Trip_Data.`24_25_Trip_Data_Combined`
 WHERE
   TIMESTAMP_DIFF(ended_at, started_at, MINUTE) <= 1;
+
+SEARCHING DUPLICATE ROWS PREVIEW
+SELECT 
+COUNT(ride_id) - COUNT(DISTINCT ride_id) AS duplicate_rows
+FROM `rareair23.Cyclistic_Trip_Data.24_25_Trip_Data_Combined`
+
+REMOVING DUPLICATE ROWS
+
+CREATE OR REPLACE TABLE `rareair23.Cyclistic_Trip_Data.24_25_Trip_Data_Combined_deduplicated` AS
+SELECT
+  ride_id,
+  rideable_type,
+  started_at,
+  ended_at,
+  ride_length,
+  day_of_week,
+  month,
+  start_station_name,
+  end_station_name,
+  start_lat,
+  start_lng,
+  end_lat,
+  end_lng,
+  member_casual
+FROM
+  rareair23.Cyclistic_Trip_Data.24_25_Trip_Data_Combined
+QUALIFY ROW_NUMBER() OVER (PARTITION BY ride_id
+  ORDER BY started_at) = 1;
