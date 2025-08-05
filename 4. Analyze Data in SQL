@@ -3,7 +3,8 @@ SELECT
 member_casual, 
 rideable_type, 
 COUNT(*) AS total_trips
-FROM `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`
+FROM `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated
+`
 GROUP BY member_casual, rideable_type
 ORDER BY member_casual, total_trips;
 
@@ -12,7 +13,8 @@ SELECT
 month, 
 member_casual, 
 COUNT(ride_id) AS total_trips
-FROM `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`
+FROM `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated
+`
 GROUP BY 
 month,
 member_casual
@@ -22,7 +24,8 @@ SELECT
 day_of_week, 
 member_casual, 
 COUNT(ride_id) AS total_trips
-FROM `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`
+FROM `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated
+`
 GROUP BY day_of_week, member_casual
 ORDER BY member_casual;
 
@@ -32,7 +35,7 @@ SELECT
   member_casual,
   COUNT(ride_id) AS total_trips
 FROM
-  rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined
+  rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated
 GROUP BY hour_of_day_12hr, member_casual, EXTRACT(HOUR FROM started_at)
 ORDER BY member_casual, EXTRACT(HOUR FROM started_at);
 
@@ -42,7 +45,7 @@ SELECT
   member_casual,
   AVG(ride_length) AS avg_ride_duration
 FROM
-  `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`
+  `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated`
 GROUP BY 
   month,
   member_casual
@@ -55,7 +58,7 @@ SELECT
   member_casual,
   AVG(ride_length) AS avg_ride_duration
 FROM
-  `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`
+  `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated`
 GROUP BY 
   day_of_week,
   member_casual
@@ -69,7 +72,7 @@ SELECT
   member_casual,
   AVG(ride_length) AS avg_ride_duration
 FROM
-  `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`
+  `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated`
 GROUP BY
   hour_of_day, 
   member_casual
@@ -84,7 +87,7 @@ member_casual,
   AVG(start_lat) AS start_lat, AVG(start_lng) AS start_lng,
   COUNT(ride_id) AS total_trips
 FROM 
-`rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`
+`rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated`
 GROUP BY 
 start_station_name, 
 member_casual;
@@ -97,8 +100,7 @@ member_casual,
   AVG(end_lat) AS end_lat, AVG(end_lng) AS end_lng,
   COUNT(ride_id) AS total_trips
 FROM 
-`rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`
+`rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated`
 GROUP BY 
 end_station_name, 
 member_casual;
-
