@@ -94,7 +94,7 @@ Using **BigQuery SQL**,
   - `day_of_week`  
   - `hour_of_day`
  
- [SQL Query]()
+ [SQL Query](1. Combining Data)
 ### Quality Checks
 - Validated station names  
 - Filtered out test rides and docking station inconsistencies  
