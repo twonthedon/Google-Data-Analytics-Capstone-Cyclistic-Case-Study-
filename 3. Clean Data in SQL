@@ -1,5 +1,5 @@
 DATA CLEANING
-CREATE OR REPLACE TABLE `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined` AS (
+CREATE OR REPLACE TABLE `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated` AS (
   SELECT
     ride_id,
     rideable_type,
@@ -16,7 +16,8 @@ CREATE OR REPLACE TABLE `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_C
     end_lng,
     member_casual
   FROM
-    `rareair23.Cyclistic_Trip_Data.24_25_Trip_Data_Combined`
+    `rareair23.Cyclistic_Trip_Data.24_25_Trip_Data_Combined_deduplicated
+`
   WHERE
     start_station_name IS NOT NULL
     AND end_station_name IS NOT NULL
@@ -28,4 +29,5 @@ CREATE OR REPLACE TABLE `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_C
 
 SELECT COUNT(ride_id) AS no_of_rows
 FROM
-  `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined`;
+  `rareair23.Cyclistic_Trip_Data.cleaned_24_25_Trip_Data_Combined_deduplicated
+`;
