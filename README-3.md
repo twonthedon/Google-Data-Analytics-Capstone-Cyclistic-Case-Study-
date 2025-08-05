@@ -94,11 +94,13 @@ Using **BigQuery SQL**,
   - `day_of_week`  
   - `hour_of_day`
  
- SQL Query [Combining Data](https://github.com/twonthedon/Google-Data-Analytics-Capstone-Cyclistic-Case-Study-/blob/f2cea5510054f2ef80783a7a7d8bfc3e458d237b/1.%20Combining%20Data)
+ SQL Query: [Combining Data](https://github.com/twonthedon/Google-Data-Analytics-Capstone-Cyclistic-Case-Study-/blob/f2cea5510054f2ef80783a7a7d8bfc3e458d237b/1.%20Combining%20Data)
 ### Quality Checks
 - Validated station names  
 - Filtered out test rides and docking station inconsistencies  
 - Ensured no duplicate `ride_id`s
+SQL Query:[Exploring Data](https://github.com/twonthedon/Google-Data-Analytics-Capstone-Cyclistic-Case-Study-/blob/cb19b5fdec44c927bdacf3a8370594b09e733582/2.%20%20Exploring%20Data%20in%20SQL)
+
 
 ---
 
