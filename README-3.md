@@ -85,7 +85,7 @@ Cyclistic is seeing strong usage from both casual riders and annual members. How
 ## 🧹 Process
 
 ### Cleaning Steps
-Using **BigQuery SQL**, I:
+Using **BigQuery SQL**,
 - Combined all 12 months into one dataset (~5.7M rows)  
 - Removed null values and entries with negative ride durations  
 - Converted `started_at` and `ended_at` to datetime formats  
@@ -93,7 +93,8 @@ Using **BigQuery SQL**, I:
   - `ride_length_minutes`  
   - `day_of_week`  
   - `hour_of_day`
-
+ 
+ [SQL Query]()
 ### Quality Checks
 - Validated station names  
 - Filtered out test rides and docking station inconsistencies  
