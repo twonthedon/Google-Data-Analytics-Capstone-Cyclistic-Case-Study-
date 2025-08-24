@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 TABLE OF CONTENTS
+##  TABLE OF CONTENTS
 - [Project Overview](#project-overview)
 - [About](#about)
 - [Ask](#ask)
@@ -16,7 +16,7 @@
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 In this capstone project for the Google Data Analytics Certificate, I will perform real-world tasks of a junior data analyst for a fictional Chicago-based company, **Cyclistic**. I analyzed the previous 12 months of public bike-share data.
 
@@ -26,7 +26,7 @@ I used **BigQuery SQL** for data exploration and transformation, and **Tableau**
 
 ---
 
-## 🏙️ About
+##  About
 
 ### Cyclistic
 
@@ -38,7 +38,7 @@ Until now, Cyclistic’s marketing strategy relied on building general awareness
 
 ---
 
-## ❓ Ask
+##  Ask
 
 ### Business Challenge
 
@@ -59,7 +59,7 @@ Cyclistic is seeing strong usage from both casual riders and annual members. How
 
 ---
 
-## 📂 Prepare
+##  Prepare
 
 ### Data Sources
 
@@ -78,7 +78,7 @@ Cyclistic is seeing strong usage from both casual riders and annual members. How
 
 ---
 
-## 🧹 Process
+##  Process
 
 ### Cleaning Steps
 
@@ -103,7 +103,7 @@ Using **BigQuery SQL**:
 
 ---
 
-## 📊 Analyze & 📤 Share
+##  Analyze &  Share
 
 ### Member vs Casual Rider Trends
 
@@ -121,9 +121,9 @@ Using **BigQuery SQL**:
   - **Casual riders** often end near **Navy Pier**, a tourist-heavy area  
   - **Members** often end in **West Loop Gate**, a business district — likely commuting to/from work  
 
-📍 [Trip Start Locations – Chicago University (Tableau)](https://public.tableau.com/views/TotalTripsfromStartStations/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+ [Trip Start Locations – Chicago University (Tableau)](https://public.tableau.com/views/TotalTripsfromStartStations/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-### 📈 Tableau Visualizations
+###  Tableau Visualizations
 
 - [Ride Types Used – Member vs Casual](https://public.tableau.com/views/TotalRideTypesUsed/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
 - [Trip End Locations – Lakeshore vs West Loop](https://public.tableau.com/views/TotalTripstoEndStations/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
@@ -145,7 +145,7 @@ Using **BigQuery SQL**:
 
 ---
 
-## 🚀 Act
+##  Act
 
 ### Final Recommendation: Weekend Warrior Pass
 
@@ -160,7 +160,7 @@ This leverages insights about casual rider timing, trip length, and geography to
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 - **SQL (BigQuery):** Data cleaning, aggregation, joins  
 - **Tableau:** Geospatial visualization and dashboard creation  
