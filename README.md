@@ -1,4 +1,4 @@
-# 🚲 Google Data Analytics Capstone: Cyclistic Case Study  
+#  Google Data Analytics Capstone: Cyclistic Case Study  
 *By Antwoine Johnson*  
 [Certificate: Google Data Analytics Professional Certificate (Coursera)](https://www.coursera.org/professional-certificates/google-data-analytics)
 
